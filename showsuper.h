@@ -11,4 +11,3 @@ struct minix_super_block {
     unsigned int s_zones;
 };
 
-struct minix_super_block* getSuperBlock(int fd);

@@ -5,7 +5,7 @@
 #include <string.h>
 
 #include "help.h"
-#include "showsuper.h"
+#include "showsuper.c"
 
 void main() {
   char *exit = "exit";
