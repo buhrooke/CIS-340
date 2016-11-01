@@ -5,13 +5,16 @@
 #include <string.h>
 
 #include "help.h"
-#include "showsuper.c"
+#include "showsuper.h"
+#include "traverse.h"
 
 void main() {
   char *exit = "exit";
   char *cmd;
   char *mnt;
   int fd;
+
+  //TODO: Don't allow the uer to use commands that require a fd until an image is mounted
   while(1){
     
     printf("minix: ");
@@ -42,7 +45,7 @@ void main() {
       showsuper(fd);
     }
     else if(strcmp(cmd,"traverse")==0){
-      printf("success for traverse\n");
+      traverse(fd);
     }
     else if(strcmp(cmd,"showzone")==0){
       printf("success for showzone\n");

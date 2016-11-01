@@ -11,3 +11,4 @@ struct minix_super_block {
     unsigned int s_zones;
 };
 
+void showsuper(int fd);

@@ -12,3 +12,5 @@ struct minix_dir_entry {
     unsigned short inode;
     char name[0];
 };
+
+void traverse(int fd);

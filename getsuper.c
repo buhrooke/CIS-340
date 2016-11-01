@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include "showsuper.h"
+#include "getsuper.h"
 
 struct minix_super_block* getSuperBlock(int fd)
 {
