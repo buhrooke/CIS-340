@@ -97,6 +97,8 @@ void traverse(int fd, int detailPrint) {
                 if(info->tm_mon==11) printf("Dec ");
 
                 printf("%d ",info->tm_mday);
+
+                //I don't think this year is right
                 printf("%d ",info->tm_year);
 
                 lseek(fd,address+entryAddress+16,SEEK_SET);
