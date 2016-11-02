@@ -1,1 +1,1 @@
-struct minix_super_block* getSuperBlock(int fd);
+void getSuperBlock(int fd, struct minix_super_block *superblock);

@@ -13,4 +13,4 @@ struct minix_dir_entry {
     char name[0];
 };
 
-void traverse(int fd);
+void traverse(int fd, int detailPrint);

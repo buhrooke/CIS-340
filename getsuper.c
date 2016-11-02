@@ -5,10 +5,8 @@
 #include "showsuper.h"
 #include "getsuper.h"
 
-struct minix_super_block* getSuperBlock(int fd)
+void getSuperBlock(int fd, struct minix_super_block *superblock)
 {
-    struct minix_super_block *superblock = malloc(sizeof(struct minix_super_block));
     lseek(fd,1024,SEEK_SET);
-    read(fd, superblock, 1024);
-    return superblock;
+    read(fd, superblock, sizeof(struct minix_super_block));
 } 
