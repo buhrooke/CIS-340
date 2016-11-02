@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-g
+CFLAGS=-std=c99 -g
 DEPS = getsuper.h help.h showsuper.h traverse.h
 OBJ = getsuper.o help.o main.o showsuper.o traverse.o showzone.o
 
