@@ -6,7 +6,7 @@
 
 #include "help.h"
 #include "showsuper.h"
-//#include "traverse.h"
+#include "traverse.h"
 
 void main() {
   char *exit = "exit";
@@ -108,15 +108,6 @@ void main() {
     else{
       printf("Please enter a valid command\n");
     }
-    
-    
-
-    
-    
-   
-
-
-
   }
 
 }
